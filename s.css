@@ -3,6 +3,7 @@ body {
     overflow-y: hidden;
     overflow-x: hidden;
     margin:0;
+    line-height:0;
 }
 .flex-container {
     display: flex;
@@ -21,6 +22,9 @@ body {
     background-color: lightgray;
     height:10vh;
     width:100vw;
+    z-index: 1;
+    flex-direction: row;
+    display: flex;
 }
 .topbar button {
     height:10vh;
@@ -28,6 +32,12 @@ body {
     font-size:50px;
     border:none;
     background-color: lightgray;
+    z-index:inherit;
+}
+.topbar p {
+    color:black;
+    font-size:50px;
+    transform: translateY(-15px);
 }
 #main-planet-button {
     height: 1vh;
@@ -53,6 +63,7 @@ body {
     height:55vh;
     width:100%;
     text-align: center;
+    line-height: 1;
 }
 #main-planet-overview {
     height:10vh;
@@ -66,6 +77,18 @@ body {
     height: 90vh;
     width: 100vw;
     background-color: gray;
+}
+#resource-1-p {
+    font-size: 40px;
+}
+.upgrade-container { 
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+}
+.upgrade-button {
+    width: 90vw;
+    height: 10vh;
 }
 /*
 Animations
