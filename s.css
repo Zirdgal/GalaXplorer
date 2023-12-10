@@ -78,8 +78,19 @@ body {
     width: 100vw;
     background-color: gray;
 }
+.resource-container {
+    display: flex;
+    flex-direction: row;
+    height:10vh;
+    width:90vw;
+}
 #resource-1-p {
     font-size: 40px;
+    transform: translateY(-10px);
+}
+.resource-img {
+    height:60px;
+    width:60px;
 }
 .upgrade-container { 
     display: flex;
