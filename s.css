@@ -82,13 +82,48 @@ body {
     font-size: 40px;
 }
 .upgrade-container { 
-    align-content: center;
-    text-align: center;
+    display: flex;
+    align-items: center;
     justify-content: center;
+    text-align: center;
 }
 .upgrade-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     width: 90vw;
     height: 10vh;
+    margin:0;
+}
+.upgrade-button-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    height: 100%;
+}
+.upgrade-img {
+    height:55px;
+}
+.upgrade-hr-img {
+    height: 100%;
+    width:0px;
+    border: solid black 2px;
+}
+.upgrade-button-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+    line-height: 0;
+}
+.upgrade-hr-text {
+    height:0px;
+    width:100%;
+    border: solid black 2px;
 }
 /*
 Animations
