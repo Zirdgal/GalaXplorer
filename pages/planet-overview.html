@@ -22,27 +22,30 @@
         <div class="overview-main">
             <div class="resources">
                 <h1 id="resource-h1"> Resources:</h1>
-                <p id="resource-1-p">0</p>
+                <div class="resource-container">
+                    <img src="../images/resource/wood-placeholder.png" class="resource-img">
+                    <p id="resource-1-p">0</p>
+                </div>
             </div>
             <div class="upgrades">
                 <h1 id="upgrade-h1">Upgrades:</h1>
                 <div class="upgrade-container">
-                    <button id="upgrade-1" class="upgrade-button">
+                    <button id="upgrade1" class="upgrade-button">
                         <div class="upgrade-button-img-container">
                             <img src="../images/upgrade/placeholder.png" class="upgrade-img">
                         </div>
                         <hr class="upgrade-hr-img">
                         <div class="upgrade-button-text-container">
-                            <p class="upgrade-p-top">Upgrade 1 Info</p>
+                            <p class="upgrade-p-top" id="upgrade1-info-text">Increases wood creation cost: free :3</p>
                             <hr class="upgrade-hr-text">
-                            <p class="upgrade-p-bottom">Upgrade 1 Stats</p>
+                            <p class="upgrade-p-bottom" id="upgrade1-stat-text">+1 wood per second // current gain = +0</p>
                         </div>
                     </button>
                 </div>
             </div>
         </div>
     </div>
-<script src="../data/data.js"></script>
-<script src="planet-overview.js"></script>
+<script type="module" src="../data/data.js"></script>
+<script type="module" src="planet-overview.js"></script>
 </body>
 </html>
