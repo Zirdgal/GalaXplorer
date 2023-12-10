@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
     };
     mainPlanetElements.overview.button.onclick = function goToOverviewSection() { 
         loadingScreen.style.animation = "loadingScreen 1.5s forwards ease-in-out";
-        loadingScreen.style.zIndex = "2";
+        loadingScreen.style.zIndex = "99";
         setTimeout(function() {
             window.location.href = "pages/planet-overview.html";
         }, 1500);
