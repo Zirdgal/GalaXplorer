@@ -1,0 +1,69 @@
+body {
+    background-color: black;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin:0;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width:100vw;
+}
+#main-planet-img {
+    position: absolute;
+    margin: auto;
+    top: 20%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width:70%;
+}
+#main-planet-button {
+    background-color: black;
+    border:none;
+}
+.main-planet-info {
+    position: absolute;
+    background-color: gray;
+    top:90vh;
+    height:55vh;
+    width:100%;
+}
+/*
+Animations
+*/
+@keyframes planetMovingUpWards {
+    0% {
+        width: 70%;
+    }
+    100% {
+        width:100%;
+        transform: translateY(-280px);
+    }
+}
+@keyframes planetMovingDownWards {
+    0% {
+        width:100%;
+        transform: translateY(-280px);
+    }
+    100% {
+        width:70%;
+    }
+}
+@keyframes planetInfoBoxMovingUpWards {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-280px);
+    }
+}
+@keyframes planetInfoBoxMovingDownWards {
+    0% {
+        transform: translateY(-280px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
