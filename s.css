@@ -45,7 +45,7 @@ body {
 .coin-count {
     color:black;
     font-size:50px;
-    transform: translateY(-15px);
+    transform: translateY(-17.5px);
 }
 #main-planet-button {
     height: 1vh;
