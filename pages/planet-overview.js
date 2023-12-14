@@ -73,9 +73,9 @@ upgrade.first.location.onclick = function firstUpgradeClicked() {
 };
 
 convertButton.onclick = function convertButtonClicked() {
-    if (materials.wood >= 10) {
-        materials.wood = materials.wood - 10;
-        materials.coin = materials.coin + 10;
+    if (materials.wood >= 1000) {
+        materials.wood = materials.wood - 1000;
+        materials.coin = materials.coin + 1;
         coinCount.textContent = materials.coin;
     }
     // Save updated resource amounts after conversion
