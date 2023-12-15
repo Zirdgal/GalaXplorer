@@ -1,6 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() {
     const loadingScreen = document.getElementById("loading-screen");
     const mainPlanetElements = {
+        topbar: {
+            topbarContainer: document.getElementsByClassName("topbar")[0],
+            coins: {
+                cointCount: document.getElementById("coin-count"),
+                coinContainer: document.getElementsByClassName("coins")[0],
+            },
+        },
         animation: {
             state: false
         },
@@ -19,6 +26,12 @@ document.addEventListener("DOMContentLoaded", function() {
         img: document.getElementById("main-planet-img"),
         button: document.getElementById("main-planet-button")
     };
+    let materials =  {
+        coin: 0,
+    };
+
+    materials.coin = parseInt(localStorage.getItem("coin")) || 0;
+   mainPlanetElements.topbar.coins.cointCount.textContent = materials.coin;
 
     mainPlanetElements.button.onclick = mainPlanetElements.info.container.onclick = function animationFunction() {
         if(mainPlanetElements.animation.state === false) {
