@@ -8,6 +8,10 @@ document.addEventListener("DOMContentLoaded", function() {
             container: document.getElementsByClassName("main-planet-info")[0],
             header1: document.getElementById("main-planet-info-h1"),
         },
+        mainButtons: {
+            container: document.getElementsByClassName("above-info-buttons")[0],
+            skillTreeButton: document.getElementById("skill-tree-button"),
+        },
         overview: {
             container: document.getElementsByClassName("main-planet-overview")[0],
             button: document.getElementById("main-planet-overview"),
@@ -41,11 +45,18 @@ document.addEventListener("DOMContentLoaded", function() {
             }, 1500);
         }
     };
+    mainPlanetElements.mainButtons.skillTreeButton.onclick = function goToSkillTree() {
+        loadingScreen.style.animation = "loadingScreen 1.5s forwards ease-in-out";
+        loadingScreen.style.zIndex = "99";
+        setTimeout(function() {
+            window.location.href = "pages/skill-tree/skill-tree.html";
+        }, 1500);
+    };
     mainPlanetElements.overview.button.onclick = function goToOverviewSection() { 
         loadingScreen.style.animation = "loadingScreen 1.5s forwards ease-in-out";
         loadingScreen.style.zIndex = "99";
         setTimeout(function() {
-            window.location.href = "pages/planet-overview.html";
+            window.location.href = "pages/planet-overview/planet-overview.html";
         }, 1500);
-    }
+    };
 });
