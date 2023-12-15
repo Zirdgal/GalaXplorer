@@ -79,6 +79,10 @@ body {
     background-color:#68424d;
     margin-top: 70vh;
 }
+#skill-tree-button {
+    height: 100%;
+    width: 25%;
+}
 .main-planet-info {
     position: absolute;
     background-color: var(--primary);
