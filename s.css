@@ -224,9 +224,8 @@ body {
 }
 
 .skill-modal-content-text {
-    flex-grow: 1;
-    overflow-y: auto;
-    white-space: normal;
+    height:75%;
+    overflow: auto;
     font-size: 18px;
 }
 
