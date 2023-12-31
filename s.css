@@ -224,9 +224,11 @@ body {
 }
 
 .skill-modal-content-text {
-    height:75%;
+    height: 75%;
     overflow: auto;
     font-size: 18px;
+    white-space: pre-line; /* Preserve newline characters */
+    word-wrap: break-word; /* Break words to prevent overflow */
 }
 
 .skill-modal-end {
